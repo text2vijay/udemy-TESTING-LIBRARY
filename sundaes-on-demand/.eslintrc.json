@@ -1,14 +1,8 @@
 {
   "plugins": ["testing-library", "jest-dom"],
 
-  "extends": ["plugin:testing-library/react", "plugin:testing-library/recommended", "react-app", "react-app/jest", "plugin:jest-dom/recommended"]
+  "extends": ["plugin:testing-library/react", "plugin:testing-library/recommended", "react-app", "react-app/jest", "plugin:jest-dom/recommended"],
 
-  /* "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
   "rules": {
     "testing-library/await-async-query": "error",
     "testing-library/no-await-sync-query": "error",
@@ -20,7 +14,15 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
-  "parserOptions": {
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  }
+
+  /*"parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
     "ecmaFeatures": {
